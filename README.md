@@ -42,11 +42,8 @@ Takım 62
 
 - **Sprint Notları**: Oyun teması belirlendi, çeşitli mekanikler assetler vb. teknik detaylarla alakalı araştırmalar yapıldı, benzer janralardaki ürünler incelendi.
 - **Sprint içinde tamamlanması tahmin edilen puan**: 80 Puan
-
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 320 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 80 ile başlaması gerektiğine karar verildi.
-- 
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü discord/whatsapp üzerinden yapılmasına karar verdik.
-- 
 - **Sprint board update**: Sprint board screenshotları:
   ![image](https://github.com/l4NGEL/googleAkademiBootcamp/assets/91789133/ba6bf0ac-c5b8-46e2-9638-4425ac836596)
 
