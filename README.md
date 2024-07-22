@@ -59,7 +59,7 @@ Alınan kararlar: Görev dağılımızı takımımız üyelerinin birinin diğer
 
 # Sprint 2
 2. Sprint Notları
-- Proje genelinde önemli bir değişiklik yapılmış olup tamamen oyun teması ve mekanikleri değiştirilmiştir.12 Temmuz’da bu tema değişikliği hakkında toplantı yapıldı.13 Haziran’da yaptığımız Sprint Planning Meeting ile takımdaki her bireye gerekli göreveler tarihler ile atanmıştır.
+- Proje genelinde önemli bir değişiklik yapılmış olup tamamen oyun teması ve mekanikleri değiştirilmiştir.12 Temmuz’da bu tema değişikliği hakkında toplantı yapıldı.13 Temmuz’da yaptığımız Sprint Planning Meeting ile takımdaki her bireye gerekli göreveler tarihler ile atanmıştır.
 - Bu Sprint’te genel olarak oyunun mekaniklerini ve tasarımını bitirip 3. Sprint’e daha sağlam bir şekilde girmeyi hedefledik. Lakin grubumuzdaki bireylerin staj,iş,sınav haftası gibi durumları planlananın gerisine düşmemize sebep oldu.
 - Görev paylaşımını iyi bir şekilde yapabilmemiz, 1. Sprint’ten aldığımız dersler sayesinde uygulamayı 5 farklı kişi olarak 5 ayrı koldan geliştirecek şekilde ayırdık. Agile Yönetim Sisteminin bu esneklik ve hedefe yönelik avantajlarını ekip olarak özümsedik.
 - Akademi’nin Değerlendirme Kriterlerini de görev paylaşımı olarak takım arkadaşlarımıza elimizden geldiğince dağıtmaya çalıştık. Proje teslimi gibi tüm takımın sorumlu olduğu kriterlerde birbirimizin motivasyonunu artıracak telkinlerle, her gün belirlediğimiz ve paylaştığımız hedeflerimizle tamamlamaya çalışacağız.
