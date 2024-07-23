@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class kamerakont : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
     public Transform target;
     public Vector2 sensitivity = new Vector2(100, 100);
