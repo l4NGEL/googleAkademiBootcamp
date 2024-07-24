@@ -80,6 +80,18 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
 - Sprint başlangıcında takım arkadaşlarımızın bazılarının Üniversite Final Sınavları vardı. Bazı arkadaşlarımız şehir dışındaydı. Bazılarımız staj ve çalışma hayatından dolayı meşguldü bundan dolayı planlama gerisinde kalındı .Bu sebeplerle olabilecek gecikmeleri önceden konuştuk ve bunlara uygun planlamamızı yaptık.
 - İlk Sprint’teki tecrübelerimize dayanarak takım arkadaşlarımızın müsaitlik durumlarına göre görev ve sorumluluklarda değişikliğe gitmeye karar verdik.
 
+  **Ürün durumu:**
+  ![image](https://github.com/user-attachments/assets/3633196a-343b-441a-b5d8-ade834cc6587)
+  ![image](https://github.com/user-attachments/assets/cb147f80-82ed-4b98-958d-33798585acc6)
+  ![image](https://github.com/user-attachments/assets/5bef92c2-ec2d-4113-81ec-3c08744774fc)
+  ![image](https://github.com/user-attachments/assets/4bb5229e-3d58-4748-8465-53f6d8b9e7b6)
+  ![image](https://github.com/user-attachments/assets/58d1e98f-c2b6-49ea-95a5-2a74a6800a67)
+
+
+
+
+
+
 ---
 
 # Sprint 3
