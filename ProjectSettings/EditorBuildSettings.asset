@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/city.unity
+    guid: 63314216cfe837e4c8d602d681848285
+  - enabled: 1
+    path: Assets/Scenes/forest.unity
+    guid: 41873e7c1838653469de6069a6e7e251
+  - enabled: 1
+    path: Assets/Scenes/SPACE.unity
+    guid: 18c5b5f7b3675804bb00d77dc87b39ef
+  - enabled: 1
+    path: Assets/Scenes/stadyum.unity
+    guid: 8c3cea3b7fe252949891517bd6c95a35
+  - enabled: 0
+    path: Assets/Scenes/island.unity
+    guid: 112518a6a058c534b8caeac532a2b7ab
   m_configObjects: {}
