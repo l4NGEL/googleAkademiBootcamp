@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     private Animator animator;
-    public CharacterController controller;
+    private Rigidbody rb;
 
-    public float speed = 6;
+    public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -19,26 +18,31 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     public float gravity = -9.8f;
     public Transform groundCheck;
-    public float groundDist;
+    public float groundDist = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
-    public float jumpHeight = 3;
+    public float jumpHeight = 3f;
 
-    //Dash & Movement
-    public Vector3 moveDir;
-
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        rb.freezeRotation = true; // Rigidbody'nin dönmesini engelle
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Zemin kontrolü
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDist, groundMask);
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f; // Daha hýzlý yere inmek için küçük bir negatif deðer
+        }
+
+        // Hareket girdisi
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
@@ -51,27 +55,23 @@ public class PlayerMovement : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            Vector3 moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
+            rb.MovePosition(rb.position + moveDir.normalized * speed * Time.deltaTime);
         }
         else
         {
             animator.SetBool("IsMoving", false);
         }
 
-        //Jump
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDist, groundMask);
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f; // Daha hýzlý yere inmek için küçük bir negatif deðer
-        }
-
+        // Zýplama
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            rb.velocity = new Vector3(rb.velocity.x, velocity.y, rb.velocity.z); // Y hýzýný ayarla
         }
 
+        // Yerçekimi
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        rb.velocity = new Vector3(rb.velocity.x, velocity.y, rb.velocity.z);
     }
 }

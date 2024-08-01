@@ -531,33 +531,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3373614826393924419, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
   m_PrefabInstance: {fileID: 1696266297}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &854485464
-Rigidbody:
+--- !u!64 &854485468
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854485459}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 14
-  m_CollisionDetection: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5494280163058066246, guid: 365e7230065e0df4f917ddf0b537da00, type: 3}
 --- !u!1 &1430284148
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,8 +671,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.6162949, z: 0.7993784}
-  m_Center: {x: 8.6302396e-11, y: 0.58240366, z: 0.10031075}
+  m_Size: {x: 1.2260624, y: 1.7207975, z: 0.7993784}
+  m_Center: {x: 0.11303139, y: 0.634655, z: 0.10031074}
 --- !u!54 &1578171122
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -701,36 +696,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 36
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!143 &1578171123
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578171120}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1578171124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,18 +712,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0691621f0308e3458b36dd690bd7d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1578171123}
   speed: 6
   turnSmoothTime: 0.1
   cam: {fileID: 594355249}
   gravity: -9.8
   groundCheck: {fileID: 854485460}
-  groundDist: 0
+  groundDist: 2
   groundMask:
     serializedVersion: 2
     m_Bits: 64
   jumpHeight: 3
-  moveDir: {x: 0, y: 0, z: 0}
 --- !u!4 &1578171126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
@@ -771,6 +738,10 @@ PrefabInstance:
     - target: {fileID: 1581076150795937726, guid: a9ec45772d935864bbb59e8f4d2feab7, type: 3}
       propertyPath: m_Name
       value: SM_Toy_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581076150795937726, guid: a9ec45772d935864bbb59e8f4d2feab7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2214307348749024516, guid: a9ec45772d935864bbb59e8f4d2feab7, type: 3}
       propertyPath: m_LocalScale.x
@@ -1022,6 +993,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.4159094
       objectReference: {fileID: 0}
+    - target: {fileID: 3373614826393924419, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 7048148758624978485, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 696.92975
@@ -1061,6 +1036,22 @@ PrefabInstance:
     - target: {fileID: 7048148758624978485, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726324530309002485, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.647938
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726324530309002485, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
+      propertyPath: m_Size.z
+      value: 44.063446
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726324530309002485, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.823969
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726324530309002485, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
+      propertyPath: m_Center.z
+      value: -0.47105408
       objectReference: {fileID: 0}
     - target: {fileID: 7760310568173864453, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
       propertyPath: m_Layer
@@ -1146,7 +1137,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2709667670818761209, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 854485464}
+      addedObject: {fileID: 854485468}
   m_SourcePrefab: {fileID: 100100000, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
 --- !u!1001 &1742820641
 PrefabInstance:
@@ -1287,9 +1278,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1328023254706044480, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1578171124}
-    - targetCorrespondingSourceObject: {fileID: 1328023254706044480, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1578171123}
     - targetCorrespondingSourceObject: {fileID: 1328023254706044480, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1578171122}

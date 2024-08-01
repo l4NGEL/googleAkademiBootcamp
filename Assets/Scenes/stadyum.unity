@@ -651,6 +651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: star bethlehem
       objectReference: {fileID: 0}
+    - target: {fileID: 3840594446828255499, guid: e53be134c6f2375458110450a09e87ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4469638880915186609, guid: e53be134c6f2375458110450a09e87ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 674.791
@@ -716,6 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff05972baec2dd4fb5715744cc3c147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectID: 
 --- !u!1 &1158797281
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,9 +883,9 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 36
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &1269877614
 BoxCollider:
@@ -903,32 +908,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.0619388, z: 1}
   m_Center: {x: 0, y: 0.5309694, z: 0}
---- !u!143 &1269877615
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269877612}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1269877616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -941,7 +920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0691621f0308e3458b36dd690bd7d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1269877615}
   speed: 6
   turnSmoothTime: 0.1
   cam: {fileID: 1577509560}
@@ -952,7 +930,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpHeight: 3
-  moveDir: {x: 0, y: 0, z: 0}
 --- !u!4 &1269877618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
@@ -1455,7 +1432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.01
+      value: 6.06
       objectReference: {fileID: 0}
     - target: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1496,9 +1473,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1328023254706044480, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1269877616}
-    - targetCorrespondingSourceObject: {fileID: 1328023254706044480, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1269877615}
     - targetCorrespondingSourceObject: {fileID: 1328023254706044480, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1269877614}
