@@ -244,6 +244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7a8d4342bb20e6c4484920469f8148e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a8d4342bb20e6c4484920469f8148e0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3

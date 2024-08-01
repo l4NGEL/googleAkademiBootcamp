@@ -704,8 +704,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2260624, y: 1.7207975, z: 0.7993784}
-  m_Center: {x: 0.11303139, y: 0.634655, z: 0.10031074}
+  m_Size: {x: 1.2260624, y: 1.4413948, z: 0.7993784}
+  m_Center: {x: 0.11303139, y: 0.77435637, z: 0.10031074}
 --- !u!54 &1578171122
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1204,6 +1204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Toy_08 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1581076150795937726, guid: a9ec45772d935864bbb59e8f4d2feab7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2214307348749024516, guid: a9ec45772d935864bbb59e8f4d2feab7, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1359,7 +1363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.285
+      value: 4.309
       objectReference: {fileID: 0}
     - target: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       propertyPath: m_LocalPosition.z

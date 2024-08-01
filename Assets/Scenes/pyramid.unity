@@ -438,8 +438,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.75775146, y: 1.3324986, z: 1.0115356}
-  m_Center: {x: 0.12112427, y: 0.6476841, z: -0.0057678223}
+  m_Size: {x: 0.75775146, y: 1.2421856, z: 1.0115356}
+  m_Center: {x: 0.12112427, y: 0.6928406, z: -0.0057678223}
 --- !u!114 &251424122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
   cam: {fileID: 1864804777}
   gravity: -9.8
   groundCheck: {fileID: 398886005}
-  groundDist: 0
+  groundDist: 1
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -1242,7 +1242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7877468419587357377, guid: 9e905e6d058bb5746847ae6f0f420eb9, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1531,6 +1531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: snowman
       objectReference: {fileID: 0}
+    - target: {fileID: 856512442802094315, guid: 33e0229781589094db520ae4fecfde0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5124194119190068834, guid: 33e0229781589094db520ae4fecfde0f, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1588,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.39
+      value: 9.32
       objectReference: {fileID: 0}
     - target: {fileID: 1812072891626710266, guid: 257c304c754d3b247a51ef5bea7a90d0, type: 3}
       propertyPath: m_LocalPosition.z
