@@ -428,11 +428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Merhaba k\xFC\xE7\xFCk macerac\u0131! Reverie oyununa ho\u015F geldin!
-    Bu oyunda birbirinden renkli d\xFCnyalar\u0131 ke\u015Ffederek saklad\u0131\u011F\u0131m\u0131z
-    harika oyuncaklar\u0131 bulacaks\u0131n. Haz\u0131r m\u0131s\u0131n? O zaman
-    hi\xE7 vakit kaybetmeden mor a\u011Fac\u0131n yan\u0131ndaki kovan\u0131 al ve
-    oyuncaklar\u0131 toplamaya ba\u015Fla! E\u011Flence dolu maceran seni bekliyor!"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -459,7 +455,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.15
+  m_fontSize: 18
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -513,6 +509,7 @@ GameObject:
   - component: {fileID: 2760293115749306469}
   - component: {fileID: 8020844521582278758}
   - component: {fileID: 5273695192417955374}
+  - component: {fileID: 7361382983953195913}
   m_Layer: 5
   m_Name: InfoMenuCanvas
   m_TagString: Untagged
@@ -603,6 +600,26 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7361382983953195913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482343716821633616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bead753576cd1724aafb8a6514914093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoText: {fileID: 4711734145375970747}
+  message: "Merhaba k\xFC\xE7\xFCk macerac\u0131! Reverie oyununa ho\u015F geldin!
+    Bu oyunda birbirinden renkli d\xFCnyalar\u0131 ke\u015Ffederek saklad\u0131\u011F\u0131m\u0131z
+    harika oyuncaklar\u0131 bulacaks\u0131n. Haz\u0131r m\u0131s\u0131n? O zaman
+    hi\xE7 vakit kaybetmeden mor a\u011Fac\u0131n yan\u0131ndaki kovan\u0131 al ve
+    oyuncaklar\u0131 toplamaya ba\u015Fla! E\u011Flence dolu maceran seni bekliyor!"
+  typingSpeed: 0.05
+  displayTime: 5
 --- !u!1 &5977220569009345148
 GameObject:
   m_ObjectHideFlags: 0
