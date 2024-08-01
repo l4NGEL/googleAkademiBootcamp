@@ -1285,8 +1285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff05972baec2dd4fb5715744cc3c147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectID: Teddybear
-  sceneIndex: 0
+  objectID: sahne1oyuncak
+  sceneIndex: 1
 --- !u!65 &1925124587
 BoxCollider:
   m_ObjectHideFlags: 0
