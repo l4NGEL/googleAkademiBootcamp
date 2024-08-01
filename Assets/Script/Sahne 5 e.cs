@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelLoaderScene3 : MonoBehaviour
+public class LevelLoaderScene5 : MonoBehaviour
 {
-    public int sceneToLoad = 3;
+    public int sceneToLoad = 5;
     public bool isReturnPortal = false;
 
     private void OnTriggerEnter(Collider other)

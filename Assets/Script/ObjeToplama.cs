@@ -3,6 +3,7 @@ using UnityEngine;
 public class CollectableObject : MonoBehaviour
 {
     public string objectID;
+    public int sceneIndex; // Add scene index to identify which scene this object belongs to
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class CollectableObject : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.Instance.CollectObject(objectID);
+            GameManager.Instance.CollectObject(objectID, sceneIndex); // Pass the scene index
             gameObject.SetActive(false);
         }
     }

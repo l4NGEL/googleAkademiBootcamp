@@ -6,11 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/autumn.unity
+    guid: 3f8fd3a06389bd04a9ee6fcb13ea9a08
+  - enabled: 1
     path: Assets/Scenes/city.unity
     guid: 63314216cfe837e4c8d602d681848285
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/forest.unity
     guid: 41873e7c1838653469de6069a6e7e251
+  - enabled: 1
+    path: Assets/Scenes/pyramid.unity
+    guid: 041e81c3d3661744e9e4cedf474db10e
   - enabled: 1
     path: Assets/Scenes/SPACE.unity
     guid: 18c5b5f7b3675804bb00d77dc87b39ef
