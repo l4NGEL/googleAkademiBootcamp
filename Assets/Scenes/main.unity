@@ -409,6 +409,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &490220136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 490220138}
+  - component: {fileID: 490220137}
+  m_Layer: 0
+  m_Name: QuitGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &490220137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490220136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7e8a574ce146842baca5df24fe3095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitButton: {fileID: 1132435633}
+--- !u!4 &490220138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490220136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 575.4088, y: 249.89726, z: 157.35855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &777679205
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +667,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1132435633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8406620333141990954, guid: 05ef0a51ff4dbb34d90cd7c4b696bf5a, type: 3}
+  m_PrefabInstance: {fileID: 1601146275}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1185038293 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3149619882922364851, guid: 05ef0a51ff4dbb34d90cd7c4b696bf5a, type: 3}
@@ -651,11 +707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 253.2635
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -663,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3433169487755170653, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_Name
@@ -755,7 +811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_fontSize
-      value: 23
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_margin.x
@@ -767,7 +823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_fontSizeBase
-      value: 23
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_enableAutoSizing
@@ -1237,11 +1293,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoText: {fileID: 1802590314}
   message: "Karakterini y\xF6nlendirmek ve kontrol etmek i\xE7in W A S D veya y\xF6n
-    tu\u015Flar\u0131n\u0131 kullan. Kamera a\xE7\u0131s\u0131n\u0131 de\u011Fi\u015Ftirmek
-    i\xE7in fareyi kullan. Z\u0131plamak i\xE7in Bo\u015Fluk tu\u015Funa bas. Men\xFClerden
+    tu\u015Flar\u0131n\u0131 kullan. E\u011Fer ko\u015Fmak istiyorsan SHIFT tu\u015Funa
+    bas\u0131l\u0131 tut. Kamera a\xE7\u0131s\u0131n\u0131 de\u011Fi\u015Ftirmek
+    i\xE7in fareyi kullan. Z\u0131plamak i\xE7in SPACE tu\u015Funa bas. Men\xFClerden
     \xE7\u0131kmak veya oyunu durdurmak istersen ESC tu\u015Funa bas. Kullanaca\u011F\u0131n
     t\xFCm kontroller bu \u015Fekilde, bol \u015Fans."
-  typingSpeed: 0.07
+  typingSpeed: 0.05
   closeButton: {fileID: 1233541674}
   newPanel: {fileID: 1713100026}
 --- !u!1001 &1601146275
@@ -1477,14 +1534,14 @@ MonoBehaviour:
     Bu oyunda birbirinden renkli d\xFCnyalar\u0131 ke\u015Ffederek saklad\u0131\u011F\u0131m\u0131z
     harika oyuncaklar\u0131 bulacaks\u0131n. \u0130lk olarak seni b\xFCy\xFCk bir
     adaya \u0131\u015F\u0131nlayaca\u011F\u0131z. Bu b\xFCy\xFCk adada bulup \xFCzerine
-    geldi\u011Fin her kova seni k\xFC\xE7\xFCk adalara \u0131\u015F\u0131nlayacak
+    geldi\u011Fin her bir ye\u015Fil kova seni k\xFC\xE7\xFCk adalara \u0131\u015F\u0131nlayacak
     ve oyuncaklar seni orada saklanm\u0131\u015F halde bekliyor olacak. Oyunca\u011F\u0131
     bulduktan sonra b\xFCy\xFCk adaya d\xF6nmek i\xE7in k\u0131rm\u0131z\u0131 kovaya
     do\u011Fru y\xFCr\xFC. T\xFCm oyuncaklar\u0131 bulunca oyunu tamamlam\u0131\u015F
     olacaks\u0131n. Haz\u0131r m\u0131s\u0131n? O zaman hi\xE7 vakit kaybetmeden
     ba\u015Fla butonuna bas ve oyuncaklar\u0131 toplamaya ba\u015Fla! E\u011Flence
     dolu maceran seni bekliyor!"
-  typingSpeed: 0.07
+  typingSpeed: 0.05
   closeButton: {fileID: 777679207}
   newPanel: {fileID: 1492665893}
 --- !u!224 &1713100031 stripped
@@ -1510,11 +1567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 253.2635
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1522,11 +1579,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 381585503241947784, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000019073486
+      value: 0.67
       objectReference: {fileID: 0}
     - target: {fileID: 3433169487755170653, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_Name
       value: Info1Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433169487755170653, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3572255810283232951, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_Pivot.x
@@ -1614,7 +1675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_fontSize
-      value: 25
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_margin.x
@@ -1626,7 +1687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_fontSizeBase
-      value: 25
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4338437828361331866, guid: c0a14420b1d1e2448865859544d3b935, type: 3}
       propertyPath: m_enableAutoSizing
@@ -1981,3 +2042,4 @@ SceneRoots:
   - {fileID: 1228939334}
   - {fileID: 1601146275}
   - {fileID: 168859919}
+  - {fileID: 490220138}
