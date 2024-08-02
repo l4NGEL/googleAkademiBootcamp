@@ -114,6 +114,7 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
  **Sprint Retrospective Meeting Notes**:
  
  -Teknik sorunların hızlıca çözülmesi için daha fazla önceden planlanmış yedek çözümler geliştirilmeli.
+ 
  -Daha fazla kullanıcı testi yaparak, erken aşamalarda olası hatalar ve kullanıcı deneyimi sorunları tespit edilmeli.
  
  **Ürün videosu:**
