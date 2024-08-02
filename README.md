@@ -117,7 +117,7 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
  
  -Daha fazla kullanıcı testi yaparak, erken aşamalarda olası hatalar ve kullanıcı deneyimi sorunları tespit edilmeli.
  
- **Ürün videosu:**
+ **Ürün videosu:** https://www.youtube.com/watch?v=K904vfHR280
 
 
  **Ürün durumu:**
