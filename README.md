@@ -102,7 +102,7 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
 - Bazı teknik sorunlar ve beklenmedik hatalar, belirlenen zaman diliminde çözülmesi gerektiği için ekstra çaba gerektirdi.
 - Oyun projesi başarıyla tamamlandı. Karakter tasarımı, map tasarımı, mekanikler, animasyonlar ve 3D tasarım assetleri gibi önemli bileşenler başarıyla entegre edildi.
 - Kamera entegrasyonu ve oyun içi etkileşim için yazılan kodlar sorunsuz çalıştı.
-- 3. Sprint boyunca takım olarak büyük bir ilerleme kaydedildi ve proje başarıyla tamamlandı. Elde edilen deneyimler ve öğrenilen dersler, gelecekteki projelerde daha verimli ve etkili çalışmalara temel oluşturacaktır.
+- 3.Sprint boyunca takım olarak büyük bir ilerleme kaydedildi ve proje başarıyla tamamlandı. Elde edilen deneyimler ve öğrenilen dersler, gelecekteki projelerde daha verimli ve etkili çalışmalara temel oluşturacaktır.
      
 **Sprint Review katılımcıları**: Kadir Boran Yıldız,Beyza Nur Kılıç,Ahmet Rıfat Karademir,Duha Tuyan Yılmaz,Hilal Horasan
   
