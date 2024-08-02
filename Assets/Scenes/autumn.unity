@@ -1250,6 +1250,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2255740438007680573, guid: 6dd8d29a24dc54844b1a8c4e6a28281a, type: 3}
+      propertyPath: m_fontSize
+      value: 38.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255740438007680573, guid: 6dd8d29a24dc54844b1a8c4e6a28281a, type: 3}
+      propertyPath: m_margin.x
+      value: -33.17578
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255740438007680573, guid: 6dd8d29a24dc54844b1a8c4e6a28281a, type: 3}
+      propertyPath: m_margin.z
+      value: -40.664062
+      objectReference: {fileID: 0}
+    - target: {fileID: 2678473386089331238, guid: 6dd8d29a24dc54844b1a8c4e6a28281a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 7036855847927005931, guid: 6dd8d29a24dc54844b1a8c4e6a28281a, type: 3}
       propertyPath: m_Name
       value: InfoMenuCanvas
