@@ -96,4 +96,29 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
 
 # Sprint 3
 
----
+**Sprint Review Meeting Notes**:
+- Takım üyeleri arasında iletişim ve işbirliği önceki sprintlere göre daha düzenli ve etkili oldu.
+- Bazı teknik sorunlar ve beklenmedik hatalar, belirlenen zaman diliminde çözülmesi gerektiği için ekstra çaba gerektirdi.
+- Oyun projesi başarıyla tamamlandı. Karakter tasarımı, map tasarımı, mekanikler, animasyonlar ve 3D tasarım assetleri gibi önemli bileşenler başarıyla entegre edildi.
+- Kamera entegrasyonu ve oyun içi etkileşim için yazılan kodlar sorunsuz çalıştı.
+- 3. Sprint boyunca takım olarak büyük bir ilerleme kaydedildi ve proje başarıyla tamamlandı. Elde edilen deneyimler ve öğrenilen dersler, gelecekteki projelerde daha verimli ve etkili çalışmalara temel oluşturacaktır
+**Sprint Review katılımcıları**: Kadir Boran Yıldız,Beyza Nur Kılıç,Ahmet Rıfat Karademir,Duha Tuyan Yılmaz,Hilal Horasan
+  
+**Daily Scrum**: Daily Scrum toplantıları WhatsApp’ta planlanıp, Discord’da yapılmıştır.
+
+**Sprint board update**: Sprint board screenshotları:
+  ![image](https://github.com/user-attachments/assets/7955d3d8-6ba6-4573-acf2-8aa6477d9fd0)
+
+ **Sprint Retrospective Meeting Notes**:
+ -Teknik sorunların hızlıca çözülmesi için daha fazla önceden planlanmış yedek çözümler geliştirilmeli.
+ -Daha fazla kullanıcı testi yaparak, erken aşamalarda olası hatalar ve kullanıcı deneyimi sorunları tespit edilmeli.
+ **Ürün videosu**
+ **Ürün durumu:**
+ ![image](https://github.com/user-attachments/assets/e451f592-c73f-4fbf-a2bf-877e13215c2e)
+ ![image](https://github.com/user-attachments/assets/030beae8-ef5f-41bd-a807-623b1a4a8531)
+ ![image](https://github.com/user-attachments/assets/c12f6370-4d44-4423-a432-0c77df78c8a1)
+![image](https://github.com/user-attachments/assets/2e77b1de-1308-4456-b159-90727490cfd9)
+
+
+
+ 
