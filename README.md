@@ -125,7 +125,7 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
  ![image](https://github.com/user-attachments/assets/e451f592-c73f-4fbf-a2bf-877e13215c2e)
  ![image](https://github.com/user-attachments/assets/030beae8-ef5f-41bd-a807-623b1a4a8531)
  ![image](https://github.com/user-attachments/assets/c12f6370-4d44-4423-a432-0c77df78c8a1)
-![image](https://github.com/user-attachments/assets/2e77b1de-1308-4456-b159-90727490cfd9)
+ ![image](https://github.com/user-attachments/assets/2e77b1de-1308-4456-b159-90727490cfd9)
 
 
 
