@@ -3,13 +3,13 @@ using UnityEngine;
 public class CollectableObject : MonoBehaviour
 {
     public string objectID;
-    public int sceneIndex; // Add scene index to identify which scene this object belongs to
+    public int sceneIndex; // Sahne indeksini tanýmlayýn
 
     void Start()
     {
         if (string.IsNullOrEmpty(objectID))
         {
-            Debug.LogError("objectID is not set for " + gameObject.name);
+            Debug.LogError("objectID ayarlanmamýþ: " + gameObject.name);
             return;
         }
 
@@ -23,7 +23,8 @@ public class CollectableObject : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.Instance.CollectObject(objectID, sceneIndex); // Pass the scene index
+            Debug.Log($"Oyuncu nesneyi topladý: {objectID}");
+            GameManager.Instance.CollectObject(objectID); // Sahne indeksini geçmeye gerek yok
             gameObject.SetActive(false);
         }
     }

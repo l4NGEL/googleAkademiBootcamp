@@ -4,7 +4,6 @@ using TMPro;
 public class CountObjects : MonoBehaviour
 {
     GameObject objUI;
-    public GameObject infoMenuCanvas; // InfoMenuCanvas referansÄ±
 
     void Start()
     {
@@ -13,11 +12,6 @@ public class CountObjects : MonoBehaviour
         if (objUI == null)
         {
             Debug.LogError("ObjectNum GameObject not found. Make sure it is named correctly and is active in the scene.");
-        }
-
-        if (infoMenuCanvas == null)
-        {
-            Debug.LogError("InfoMenuCanvas GameObject not assigned. Please assign it in the inspector.");
         }
     }
 
@@ -42,12 +36,7 @@ public class CountObjects : MonoBehaviour
 
                 if (remainingObjects == 0)
                 {
-                    objUIText.text = "Bu Adadaki OyuncaÄŸÄ± Buldun";
-
-                    if (infoMenuCanvas != null)
-                    {
-                        infoMenuCanvas.SetActive(false); // InfoMenuCanvas'Ä± inactive yap
-                    }
+                    objUIText.text = "Bu adadaki oyuncaðý topladýn.";
                 }
             }
             else

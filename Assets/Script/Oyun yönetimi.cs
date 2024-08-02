@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
     public Dictionary<string, bool> collectedObjects = new Dictionary<string, bool>();
-    public Dictionary<int, bool> sceneCompleted = new Dictionary<int, bool>();
+    public int totalCollectibleObjects = 5; // Toplanmasý gereken toplam oyuncak sayýsý
 
     void Awake()
     {
@@ -14,20 +15,19 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            // Bu GameObject sahne deðiþikliklerinde yok edilmez
             DontDestroyOnLoad(gameObject);
         }
         else
         {
-            // Mevcut bir Instance varsa, bu yeni örneði yok et
             Destroy(gameObject);
         }
     }
 
-    public void CollectObject(string objectID, int sceneIndex)
+    public void CollectObject(string objectID)
     {
         if (!string.IsNullOrEmpty(objectID))
         {
+            Debug.Log($"Nesne toplandý: {objectID}");
             if (collectedObjects.ContainsKey(objectID))
             {
                 collectedObjects[objectID] = true;
@@ -37,15 +37,12 @@ public class GameManager : MonoBehaviour
                 collectedObjects.Add(objectID, true);
             }
 
-            // Kontrol et: Tüm nesneler toplandý mý?
-            if (AreAllObjectsCollectedInScene(sceneIndex))
-            {
-                sceneCompleted[sceneIndex] = true;
-            }
+            // Tüm nesneler toplandý mý kontrol et
+            CheckAllObjectsCollected();
         }
         else
         {
-            Debug.LogError("ObjectID is null or empty.");
+            Debug.LogError("ObjectID boþ veya geçersiz.");
         }
     }
 
@@ -53,27 +50,49 @@ public class GameManager : MonoBehaviour
     {
         if (string.IsNullOrEmpty(objectID))
         {
-            Debug.LogError("ObjectID is null or empty.");
+            Debug.LogError("ObjectID boþ veya geçersiz.");
             return false;
         }
 
         return collectedObjects.ContainsKey(objectID) && collectedObjects[objectID];
     }
 
-    public bool IsSceneCompleted(int sceneIndex)
-    {
-        return sceneCompleted.ContainsKey(sceneIndex) && sceneCompleted[sceneIndex];
-    }
-
     public bool AreAllObjectsCollectedInScene(int sceneIndex)
     {
+        Debug.Log($"Sahne {sceneIndex} içindeki tüm nesneler toplandý mý kontrol ediliyor...");
         foreach (var obj in FindObjectsOfType<CollectableObject>())
         {
+            Debug.Log($"Nesne {obj.objectID} sahne {sceneIndex} içinde kontrol ediliyor...");
             if (obj.sceneIndex == sceneIndex && !IsObjectCollected(obj.objectID))
             {
+                Debug.Log($"Nesne {obj.objectID} sahne {sceneIndex} içinde toplanmamýþ.");
                 return false;
             }
         }
+        Debug.Log($"Sahne {sceneIndex} içindeki tüm nesneler toplandý.");
         return true;
+    }
+
+    void CheckAllObjectsCollected()
+    {
+        Debug.Log("Tüm oyuncaklar toplandý mý kontrol ediliyor...");
+        int collectedCount = 0;
+
+        foreach (var obj in collectedObjects.Values)
+        {
+            if (obj) collectedCount++;
+        }
+
+        if (collectedCount >= totalCollectibleObjects)
+        {
+            // Eðer tüm oyuncaklar toplandýysa, "GameEnded" ekranýna geçiþ yap
+            Debug.Log("Tüm oyuncaklar toplandý! Son ekran yükleniyor...");
+            LoadEndScreen();
+        }
+    }
+
+    void LoadEndScreen()
+    {
+        SceneManager.LoadScene("GameEnded");
     }
 }
