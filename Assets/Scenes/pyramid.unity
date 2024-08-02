@@ -1403,7 +1403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 856512442802094315, guid: 33e0229781589094db520ae4fecfde0f, type: 3}
       propertyPath: m_Name
-      value: snowman
+      value: sahne3oyuncak
       objectReference: {fileID: 0}
     - target: {fileID: 5124194119190068834, guid: 33e0229781589094db520ae4fecfde0f, type: 3}
       propertyPath: m_IsTrigger
