@@ -21,11 +21,7 @@ public class InfoBox : MonoBehaviour
 
     void Update()
     {
-        if (isDisplaying && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) ||
-                             Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) ||
-                             Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) ||
-                             Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
-                             Input.GetKeyDown(KeyCode.Escape)))
+        if (isDisplaying && (Input.GetKeyDown(KeyCode.Escape)))
         {
             HideInfoBox();
         }
