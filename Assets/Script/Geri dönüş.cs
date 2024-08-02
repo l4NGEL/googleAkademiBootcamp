@@ -11,7 +11,7 @@ public class ReturnPortal : MonoBehaviour
         {
             if (GameManager.Instance.AreAllObjectsCollectedInScene(SceneManager.GetActiveScene().buildIndex))
             {
-                SceneManager.LoadScene(0); // Ana sahneye dön
+                SceneManager.LoadScene(6); // Ana sahneye dï¿½n
             }
             else
             {
