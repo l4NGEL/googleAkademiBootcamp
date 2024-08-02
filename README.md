@@ -112,10 +112,15 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
   ![image](https://github.com/user-attachments/assets/7955d3d8-6ba6-4573-acf2-8aa6477d9fd0)
 
  **Sprint Retrospective Meeting Notes**:
+ 
  -Teknik sorunların hızlıca çözülmesi için daha fazla önceden planlanmış yedek çözümler geliştirilmeli.
  -Daha fazla kullanıcı testi yaparak, erken aşamalarda olası hatalar ve kullanıcı deneyimi sorunları tespit edilmeli.
+ 
  **Ürün videosu:**
+
+
  **Ürün durumu:**
+ 
  ![image](https://github.com/user-attachments/assets/e451f592-c73f-4fbf-a2bf-877e13215c2e)
  ![image](https://github.com/user-attachments/assets/030beae8-ef5f-41bd-a807-623b1a4a8531)
  ![image](https://github.com/user-attachments/assets/c12f6370-4d44-4423-a432-0c77df78c8a1)
