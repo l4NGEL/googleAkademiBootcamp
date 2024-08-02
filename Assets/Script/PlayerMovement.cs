@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
 
     public float speed = 6f;
+    public float sprintSpeed = 12f; // Koþma hýzý
+    private float currentSpeed;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -21,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDist = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
-    public float jumpHeight = 3f;
+    public float jumpHeight = 0.01f; // Zýplama yüksekliðini azalttýk
 
     void Start()
     {
@@ -31,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         rb.freezeRotation = true; // Rigidbody'nin dönmesini engelle
+        currentSpeed = speed; // Baþlangýç hýzý
     }
 
     void Update()
@@ -48,6 +51,16 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 dir = new Vector3(h, 0, v).normalized;
 
+        // Koþma kontrolü
+        if (isGrounded && Input.GetKey(KeyCode.LeftShift) && dir.magnitude >= 0.1f)
+        {
+            currentSpeed = sprintSpeed; // Koþma hýzý
+        }
+        else
+        {
+            currentSpeed = speed; // Normal hýz
+        }
+
         if (dir.magnitude >= 0.1f)
         {
             animator.SetBool("IsMoving", true);
@@ -56,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
-            rb.MovePosition(rb.position + moveDir.normalized * speed * Time.deltaTime);
+            rb.MovePosition(rb.position + moveDir.normalized * currentSpeed * Time.deltaTime);
         }
         else
         {
