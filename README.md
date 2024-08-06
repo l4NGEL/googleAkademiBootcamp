@@ -107,6 +107,7 @@ Sprint içinde tamamlanması tahmin edilen puan: 120 puan
 **Sprint Review katılımcıları**: Kadir Boran Yıldız,Beyza Nur Kılıç,Ahmet Rıfat Karademir,Duha Tuyan Yılmaz,Hilal Horasan
   
 **Daily Scrum**: Daily Scrum toplantıları WhatsApp’ta planlanıp, Discord’da yapılmıştır.
+Puan tamamlama mantığı: - Her bir User Story Point Fibonacci sayıları ile 1, 2, 3, 5, 8 ve en büyük 10 olacak şekilde değerlendirilmiştir. Daha büyük Puana sahip Story’ler Sub Story’lere bölünmüştür. 3. Sprint boyunca tamamlanması gereken puan, iş yükü önceliğine göre hesaplanmış ve 196 olarak kararlaştırılmıştır.
 
 **Sprint board update**: Sprint board screenshotları:
   ![image](https://github.com/user-attachments/assets/7955d3d8-6ba6-4573-acf2-8aa6477d9fd0)
